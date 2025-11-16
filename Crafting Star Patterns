@@ -1,0 +1,24 @@
+def pyramid(h:int):
+
+    for i in range(1,h+1):
+
+        print(" "*(h-i)+ "*"*(2*i-1))
+def diamond(h:int):
+
+    for i in range(1,h+1):
+
+        print(" "*(h-i)+ "*"*(2*i-1))
+
+    for i in range(h-1,0,-1):
+
+        print(" "*(h-i)+ "*"*(2*i-1))
+def main():
+    h=int(input())
+    pd=int(input())
+    if pd==1:
+        pyramid(h)
+    if pd==2:
+        diamond(h)
+        
+if __name__=="__main__":
+  main()
